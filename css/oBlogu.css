@@ -1,0 +1,258 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+.placeholder-big{
+    height: 1000px;
+}
+/* Header stil */
+.header-container {
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-content img {
+    height: 80px;
+    width: 80px;
+    alt: logo;
+}
+
+/*https://www.w3schools.com/howto/howto_css_searchbar.asp */
+.topnav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    margin: 30px auto;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} 
+/* Footer stil */
+.footer-container {
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.aplikacijeFooter {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.aplikacijeFooter li {
+    font-size: 16px;
+    color: white;
+}
+
+.prviClanak{
+    padding: 5px;
+    text-align: center;
+    margin-right: 20px;
+    margin-left: 300px;
+    margin-top: 10px;
+    border: 2px solid;
+    background-color: aliceblue;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+#naslovBlog2{
+    text-align: center;
+    margin-top: 50px;
+     margin-right: 20px;
+    margin-left: 300px;
+
+}
+
+#naslovBlog1{
+    text-align: center;
+    margin-top: 150px;
+    padding: 10px;
+     margin-right: 20px;
+    margin-left: 300px;
+}
+.drugiClanak{
+     padding: 5px;
+    margin-right: 20px;
+    margin-left: 300px;
+    margin-top: 50px;
+    border: 2px solid;
+    background-color: aliceblue;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+.tabelaBlog {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+th{background-color: #dddddd;}
+td, th {
+  border: 1px solid #bbbbbb;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+.videoBlog{
+    margin-top: 30px;
+    height: 200px;
+    weight: 200px;
+    align-items: center;
+}
+
+.slikaBlog1{
+    margin-top: 30px;
+    height: 300px;
+    weight: 400px;
+    align-items: center;
+
+}
+
+.listaRobota{
+    text-align: left;
+}
+
+.vertMeni {
+   list-style-type: none;
+   padding: 5px;
+   width: 20%;
+   margin:0;
+   background-color: #f1f1f1;
+   position: sticky;
+   height: auto;
+   overflow: auto;
+   float: left; 
+}
+
+li a {
+  display: flex;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav li {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        padding: 15px;
+    }
+
+    .aplikacijeFooter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aplikacijeFooter li {
+        font-size: 14px;
+    }
+
+    .prviClanak, .drugiClanak {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #naslovBlog1, #naslovBlog2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tabelaBlog {
+        width: 100%;
+    }
+
+    .videoBlog {
+        width: 100%;
+    }
+
+    .slikaBlog1 {
+        width: 100%;
+    }
+
+    .vertMeni {
+        width: 100%;
+        float: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+}

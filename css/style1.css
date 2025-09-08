@@ -1,0 +1,208 @@
+/* Generalni stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.sredina {
+    padding-top: 80px;
+}
+.fullscreen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 5rem; 
+    font-family: 'Dancing Script';
+    color: royalblue;
+    letter-spacing: 2px;
+            
+}
+
+.header-container {
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-content img {
+    height: 80px;
+    width: 80px;
+    alt: logo;
+}
+
+/*https://www.w3schools.com/howto/howto_css_searchbar.asp */
+.topnav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    margin: 30px auto;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.footer-container {
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    padding: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.aplikacijeFooter {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.aplikacijeFooter li {
+    font-size: 16px;
+    color: white;
+}
+@media (max-width: 1024px) {
+    .header-content {
+        padding: 1rem 2rem;
+    }
+
+    .header-content img {
+        height: 7vw;
+        width: 7vw;
+    }
+
+    .topnav a {
+        padding: 0.7rem 1rem;
+    }
+
+    .topnav li {
+        margin: 0.8rem;
+    }
+
+    .sazetakProjekta {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .grid-slika-podaci {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-slika img {
+        height: 40vw;
+        width: 100%;
+    }
+
+    .podaci-o-skoli {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        padding: 1rem 1.5rem;
+    }
+
+    .header-content img {
+        height: 10vw;
+        width: 10vw;
+    }
+
+    .topnav a {
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+    }
+
+    .sazetakProjekta {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .grid-slika-podaci {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .grid-slika img {
+        width: 90%;
+        height: auto;
+    }
+
+    .podaci-o-skoli {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 1rem;
+    }
+
+    .header-content img {
+        height: 12vw;
+        width: 12vw;
+    }
+
+    .topnav a {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .sazetakProjekta {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .grid-slika-podaci {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .grid-slika img {
+        width: 100%;
+        height: auto;
+    }
+
+    .podaci-o-skoli {
+        width: 100%;
+    }
+}

@@ -1,0 +1,187 @@
+/* Generalni stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+.placeholder-big{
+    height: 1000px;
+}
+/* Header stil */
+.header-container {
+    background-color: cornflowerblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.header-content img {
+    height: 80px;
+    width: 80px;
+    alt: logo;
+}
+
+/*https://www.w3schools.com/howto/howto_css_searchbar.asp */
+.topnav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav li {
+    margin: 30px auto;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+} 
+
+.tabela1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+}
+
+th{background-color: #dddddd;}
+td, th {
+  border: 1px solid #bbbbbb;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+.tabela2{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    margin-bottom: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+
+}
+.tabela3{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    margin-bottom: 30px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+
+}
+#PrviNaslovUh3{
+    padding: 1px 15px 8px 40px; 
+    margin-top: 150px;
+}
+
+#DrugiNaslovUh3{
+    padding: 1px 15px 8px 40px; 
+    margin-top: 80px;
+}
+
+#TreciNaslovUh3{
+    padding: 1px 15px 8px 40px; 
+    margin-top: 80px;
+}
+
+.footer-container {
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.aplikacijeFooter {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.aplikacijeFooter li {
+    font-size: 16px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .topnav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav li {
+        margin: 10px 0;
+    }
+
+    .tabela1, .tabela2, .tabela3 {
+        width: 100%; 
+    }
+
+    #PrviNaslovUh3, #DrugiNaslovUh3, #TreciNaslovUh3 {
+        margin-top: 50px; 
+        padding: 10px 15px;
+    }
+
+    .footer-container {
+        padding: 15px;
+    }
+
+    .aplikacijeFooter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .aplikacijeFooter li {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
